@@ -1,0 +1,16 @@
+---
+- hosts: do
+  sudo: yes
+  user: root
+  tasks:
+    - name: cp repo
+      copy: src=files/mongod.repo dest=/etc/yum.repos.d/mongod.repo
+    - name: install mongo
+      yum: name=mongodb-org state=present
+    - name: cp mongod.conf
+      copy: src=files/mongod.conf dest=/etc/mongod.conf
+      notify: restart mongod
+
+  handlers:
+    - name: restart mongod
+      service: name=mongod state=restarted
