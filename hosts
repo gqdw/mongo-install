@@ -1,0 +1,8 @@
+[all]
+#mongo3 ansible_ssh_host=139.196.188.120 ansible_ssh_user=root 
+#mongo2 ansible_ssh_host=139.196.188.171 ansible_ssh_user=root
+#mongo1 ansible_ssh_host=139.196.188.192 ansible_ssh_user=root
+
+mongo3 ansible_ssh_host=120.27.194.133 ansible_ssh_user=root 
+mongo2 ansible_ssh_host=120.27.194.160 ansible_ssh_user=root
+mongo1 ansible_ssh_host=120.27.194.67 ansible_ssh_user=root
