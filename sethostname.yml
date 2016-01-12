@@ -1,0 +1,4 @@
+--- 
+- hosts: test
+  tasks:
+    - hostname: name=test112
