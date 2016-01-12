@@ -7,6 +7,9 @@ mongo3 ansible_ssh_host=120.27.194.133 ansible_ssh_user=root
 mongo2 ansible_ssh_host=120.27.194.160 ansible_ssh_user=root
 mongo1 ansible_ssh_host=120.27.194.67 ansible_ssh_user=root
 [do]
-120.27.193.161
-120.26.207.150
-121.40.88.35
+120.26.62.15
+120.55.67.158
+120.55.93.51
+#120.27.193.161
+#120.26.207.150
+#121.40.88.35
