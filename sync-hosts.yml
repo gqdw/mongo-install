@@ -1,0 +1,7 @@
+---
+- hosts: do
+  user: root
+  tasks: 
+    - lineinfile: dest=/etc/hosts state=present line="10.117.221.29 pro-mongo3"
+    - lineinfile: dest=/etc/hosts state=present line="10.117.220.221 pro-mongo2"
+    - lineinfile: dest=/etc/hosts state=present line="10.117.203.101 pro-mongo1"
