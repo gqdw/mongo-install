@@ -1,0 +1,14 @@
+---
+- hosts: ali-test
+  sudo: yes
+  user: root
+  tasks:
+    - name: cp mongod.conf
+      copy: src=files/mongod.deploy dest=/etc/mongod.conf
+      #notify: restart mongod
+    - name: cp keyfile
+      copy: src=files/keyfile.test dest=/tmp/keyfile owner=mongod group=mongod mode=600
+
+  handlers:
+    - name: restart mongod
+      service: name=mongod state=restarted enabled=yes
